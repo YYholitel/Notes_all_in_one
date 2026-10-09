@@ -1,0 +1,32 @@
+# ---- Local safety backup (not part of the vault) ----
+.notes_backup/
+
+# ---- Obsidian / plugin caches & regenerable state ----
+.smart-env/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ---- OS / editor junk ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.tmp
+*~
+.~lock.*#
+
+# ---- Plugin whose bundled main.js contains hardcoded Google OAuth
+#      credentials; GitHub push protection blocks it. Reinstall from the
+#      community plugin store to restore (notes are unaffected). ----
+.obsidian/plugins/remotely-save/
+
+# ---- Python (regenerable) ----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/

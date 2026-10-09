@@ -1,0 +1,55 @@
+/* ==========================================
+   Obsidian 自定义标题颜色
+   H1: 黑色 (加粗)
+   H2: 蓝色
+   H3: 绿色
+   H4: 黄色
+   ========================================== */
+
+/* 1. 一级标题 H1 - 黑色 + 加粗 */
+/* 预览模式 */
+.markdown-preview-view h1 {
+    color: #000000 !important; /* 纯黑色 */
+    font-weight: 900 !important;
+}
+/* 编辑模式 (Live Preview) */
+.markdown-source-view.mod-cm6 .HyperMD-header-1 .cm-header-1 {
+    color: #000000 !important;
+    font-weight: 900 !important;
+}
+
+/* 2. 二级标题 H2 - 蓝色 */
+/* 预览模式 */
+.markdown-preview-view h2 {
+    color: #2d7ff9 !important; /* 经典蓝色 */
+    font-weight: 700 !important;
+}
+/* 编辑模式 (Live Preview) */
+.markdown-source-view.mod-cm6 .HyperMD-header-2 .cm-header-2 {
+    color: #2d7ff9 !important;
+    font-weight: 700 !important;
+}
+
+/* 3. 三级标题 H3 - 绿色 */
+/* 预览模式 */
+.markdown-preview-view h3 {
+    color: #2ea866 !important; /* 清爽绿色 */
+    font-weight: 600 !important;
+}
+/* 编辑模式 (Live Preview) */
+.markdown-source-view.mod-cm6 .HyperMD-header-3 .cm-header-3 {
+    color: #2ea866 !important;
+    font-weight: 600 !important;
+}
+
+/* 4. 四级标题 H4 - 黄色 */
+/* 预览模式 */
+.markdown-preview-view h4 {
+    color: #eab308 !important; /* 醒目黄色（不刺眼） */
+    font-weight: 600 !important;
+}
+/* 编辑模式 (Live Preview) */
+.markdown-source-view.mod-cm6 .HyperMD-header-4 .cm-header-4 {
+    color: #eab308 !important;
+    font-weight: 600 !important;
+}

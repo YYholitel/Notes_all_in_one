@@ -1,0 +1,6 @@
+[submodule "Deeplearning"]
+	path = Deeplearning
+	url = https://github.com/YYholitel/Deeplearning.git
+[submodule "CS/DSAA CS203"]
+	path = CS/DSAA CS203
+	url = https://github.com/YYholitel/CS203.git

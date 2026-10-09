@@ -1,0 +1,41 @@
+/* 红色文本：~~文本~~ */
+/* 编辑模式 */
+.markdown-source-view.mod-cm6 .cm-strikethrough {
+    text-decoration: none !important;
+    color: #e74c3c !important;
+}
+/* 预览模式 */
+.markdown-preview-view s,
+.markdown-preview-view del {
+    text-decoration: none !important;
+    color: #e74c3c !important;
+}
+
+/* 蓝色文本：=== 文本 === */
+/* 编辑模式（Live Preview） */
+.markdown-source-view.mod-cm6 .cm-inline-code {
+    background: transparent !important;
+    color: inherit !important;
+}
+/* 匹配 === 文本 === */
+.markdown-source-view.mod-cm6 .cm-inline-code:not([data-language]) {
+    background: transparent !important;
+    color: #3498db !important;
+}
+
+/* 预览模式 */
+.markdown-preview-view code:not(.hljs):not([class*="language-"]) {
+    background: transparent !important;
+    color: #3498db !important;
+    padding: 0 !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    border: none !important;
+}
+
+/* 原生高亮：==文本== */
+.markdown-preview-view mark:not([data-highlight-language]),
+.markdown-source-view.mod-cm6 .cm-highlight:not([data-language]) {
+    background: rgba(255, 220, 0, 0.4) !important;
+    color: inherit !important;
+}

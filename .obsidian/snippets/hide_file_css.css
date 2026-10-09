@@ -1,0 +1,8 @@
+/* 隐藏左侧文件浏览器中的所有图片文件 */
+.nav-file-title[data-path$='.jpg'],
+.nav-file-title[data-path$='.jpeg'],
+.nav-file-title[data-path$='.png'],
+.nav-file-title[data-path$='.gif'],
+.nav-file-title[data-path$='.svg'] {
+    display: none !important;
+}

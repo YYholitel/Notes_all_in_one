@@ -1,0 +1,7 @@
+{
+  "pythonInterpreter": "E:\\anacOnda\\python.exe",
+  "jupyterLaunchCommand": "jupyter-lab",
+  "useCustomCodeBlocks": false,
+  "autoSync": true,
+  "bidirectionalSync": false
+}
