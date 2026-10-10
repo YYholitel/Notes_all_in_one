@@ -1,0 +1,71 @@
+run:
+  resolution: [256, 256]
+  view_angle: 16
+  origin: [0, 0]
+  fps: 35
+  gpu: 3
+  print_stats: false
+  seed: 42
+  dtype: float32
+  use_gaussian_lut: false
+  batch_size: 1
+
+display:
+  screen_resolution: [1920, 1080]
+  screen_diagonal: 13.3
+  dist_to_screen: 600
+
+sampling:
+  RF_size: 0.4
+  use_relative_RF_size: true
+  filter: sobel
+  T_high: 120
+  sampling_method: receptive_fields
+  receptive_fields:
+    threshold_low: 1.0e-5
+    threshold_high: 5.0e-5
+    stimulus_scale: 1.0e-4
+  center:
+    threshold: 1.0e-4
+    stimulus_scale: 8.0e-5
+
+cortex_model:
+  model: dipole
+  k: 17.3
+  a: 0.75
+  b: 120
+  alpha: 0.95
+  dropout_rate: 0.2
+  noise_scale: 0.4
+
+temporal_dynamics:
+  trace_increase_rate: 13.95528162
+  activation_decay_per_second: 0.00012340980408667956
+  trace_decay_per_second: 0.99949191
+
+size:
+  size_equation: sqrt
+  MD: 0.7
+  I_half: 40
+  slope_size: 0.08
+  current_spread: 0.000675
+  radius_to_sigma: 0.5
+
+brightness_saturation:
+  cps_half: 1.057631326853325e-07
+  slope_brightness: 19152642.500946816
+
+thresholding:
+  use_threshold: False
+  rheobase: 2.39e-05
+  activation_threshold: 9.141886000943878e-08
+  activation_threshold_sd: 6.715877869833961e-08
+
+default_stim:
+  relative_stim_duration: 1.0
+  pw_default: 0.00017
+  freq_default: 300.0
+
+gabor:
+  gabor_filtering: false
+  gamma: 1.5

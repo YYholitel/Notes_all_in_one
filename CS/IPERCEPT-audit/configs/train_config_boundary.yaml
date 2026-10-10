@@ -1,0 +1,40 @@
+model_name: exp2_constrained_nov30
+use_deterministic_algorithms: false
+batch_size: 4 
+simulator_batch_size: 1
+device: cuda:0
+gpu: 0
+save_output:
+  - phosphenes
+  - stimulation
+  - reconstruction
+  - input
+
+phosphene_map: ./configs/phosphene_maps/DefaultCoordinateMap_1000_phosphenes.pickle
+model_architecture: end-to-end-autoencoder
+in_channels: 1
+n_electrodes: 1000
+output_scaling: 0.000128
+output_steps: 10
+out_channels: 1
+encoder_out_activation: sigmoid
+decoder_out_activation: sigmoid
+learning_rate: 0.0005
+epochs: 16
+trainstats_per_epoch: 24
+validations_per_epoch: 8
+early_stop_criterium: 15
+pipeline: supervised-boundary-reconstruction # constrained-image-autoencoder
+regularization_weight: 0.99999
+dataset: ADE20K
+data_directory: ../_Datasets/ADE20K/processed_contours 
+load_preprocessed: true
+calibration_data_directory: ../_Datasets/calibration_letters/processed_contours
+calibration_load_preprocessed: true
+dino_data_directory: ../_Datasets/DINO
+dino_load_preprocessed: false
+sequence_length: 5
+mode: recon
+subject_params_random: true
+subject_params_seed: 42
+hilo_target_source: calibration

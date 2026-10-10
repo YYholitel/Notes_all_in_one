@@ -159,6 +159,8 @@ $$
 P(Y =y) = \Sigma_{x:g(x)=y} P(X=x )
 $$
  - 对能够产生y的x概率直接简单相加 
+
+
 ## 连续变量的变换 
 - CDF 法
 	- 求CDF
@@ -304,9 +306,31 @@ $$
 $$
  -  本质就是条件期望的加权平均 ，其中 **随机变量** Y 代表了各种情况
 
-## 卷积公式 
-- 求解 $Z=g(X,Y)$ 的概率密度 ： 
-- 
+## 多元变量函数的取值 
+ -  for function f(x,y)  
+ $$
+\begin{align}
+ & f_{z} (z) = \int_{\infty}^{\infty} \,f(z-y,y)dy = \int_{-\infty}^{\infty} \,f(x,z-x)dx \\
+ &   \\
+ & if X , Y  are   \ independent \\
+ & f_{z} = f_{X} * f_{Y}
+  = -\int_{-\infty}^{\infty} f_{X}(z-y)f_{Y}(y) dy =\\
+\end{align}
+ $$
+  fz也叫做 convolution （卷积） 
+   - 理解 ：f_X 就是 一个概率 ，而 卷积描述了所有 可能构成z的概率的集合 
+## Gamma 分布 
+- 类似 泊松分布 ，表示第一![[77eaab8108205968126f2031ce4836e5.jpg]]次等待事件需要的整体时间是多少？ 
+## 独立多重正态分布
+$$
+\begin{align}
+ &  for  \ random \ variables ,  X_{1} ,X_{2}, X_{3}  , X\dots \\
+ & a_{1}X_{1} + a_{2}X_{2} + \dots+  \~ N(\Sigma_{i=1}^{n }a_{i}\mu_{i},\Sigma _{i=1} ^{ n }a_{i}^{2}\sigma^{2})
+\end{align}
+$$
+ - 符合线性相加原理
+
+
 ## 中心极限定理 CLT 
 
 
